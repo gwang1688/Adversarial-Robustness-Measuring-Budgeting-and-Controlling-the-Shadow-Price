@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use this software or build on these results, please cite the software and the accompanying papers."
+title: "shadowprice: measuring, budgeting, and controlling the marginal price of adversarial robustness"
+abstract: >-
+  An open-source measure / decide / control toolkit for the marginal price of
+  adversarial robustness. It reads the shadow price from one backward pass,
+  tracks the effective-support pricing unit, computes the certification and
+  economically-optimal radii, and drives a training budget in closed loop.
+type: software
+authors:
+  - family-names: Wang
+    given-names: Guangyu
+    email: billgywang@gmail.com
+version: 0.1.0
+date-released: "2026-07-07"
+license: Apache-2.0
+repository-code: "https://github.com/billgywang/shadowprice"
+url: "https://github.com/billgywang/shadowprice"
+keywords:
+  - adversarial robustness
+  - adversarial machine learning
+  - shadow price
+  - marginal price of robustness
+  - robustness budget
+  - certification radius
+  - effective support
+  - trustworthy ML
+  - ML safety
+references:
+  - type: article
+    title: "The Effective-Support Floor of the Adversarial Shadow Price: An Omega(sqrt(k_epsilon)) Lower Bound"
+    authors:
+      - family-names: Wang
+        given-names: Guangyu
+    year: 2026
+    notes: "Paper A (theory). Manuscript."
+  - type: article
+    title: "The Instrument Panel for Adversarial Robustness: Measuring, Budgeting, and Controlling the Shadow Price"
+    authors:
+      - family-names: Wang
+        given-names: Guangyu
+    year: 2026
+    notes: "Paper B (this toolkit). Manuscript."

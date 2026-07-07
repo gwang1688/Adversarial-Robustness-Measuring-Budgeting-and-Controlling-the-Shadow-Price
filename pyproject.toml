@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shadowprice"
+version = "0.1.0"
+description = "A measurement / decision / control toolkit for the marginal price of adversarial robustness."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Guangyu Wang", email = "billgywang@gmail.com" }]
+keywords = ["adversarial-robustness", "adversarial-machine-learning", "shadow-price", "robustness-budget", "certification", "trustworthy-ml", "ml-safety"]
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = ["numpy>=1.22", "scipy>=1.8"]
+
+[project.optional-dependencies]
+sdp = ["cvxpy>=1.3"]        # tightest curvature bound
+torch = ["torch>=1.12"]     # convenience adapter for real models
+plots = ["matplotlib>=3.5"]
+dev = ["pytest>=7.0", "cvxpy>=1.3", "matplotlib>=3.5"]
+
+[project.urls]
+Homepage = "https://github.com/billgywang/shadowprice"
+Repository = "https://github.com/billgywang/shadowprice"
+
+[tool.setuptools.packages.find]
+include = ["shadowprice*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
